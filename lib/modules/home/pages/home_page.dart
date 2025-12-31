@@ -45,6 +45,11 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
         ),
+        AppConstraints.kHeight15,
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: 10.w),
+          child: CommonProductHeadingWidget(heading: "Featured Products"),
+        ),
       ],
     );
   }

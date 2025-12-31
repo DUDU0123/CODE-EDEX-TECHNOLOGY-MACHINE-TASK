@@ -23,11 +23,11 @@ class CommonProductHeadingWidget extends StatelessWidget {
           children: [
             GestureDetector(
               onTap: () {},
-              child: Icon(Icons.arrow_back_ios_new_rounded),
+              child: Icon(Icons.arrow_back_ios_new_rounded, size: 20.sp,),
             ),
             GestureDetector(
               onTap: () {},
-              child: Icon(Icons.arrow_forward_ios_rounded),
+              child: Icon(Icons.arrow_forward_ios_rounded, size: 20.sp,),
             ),
           ],
         ),

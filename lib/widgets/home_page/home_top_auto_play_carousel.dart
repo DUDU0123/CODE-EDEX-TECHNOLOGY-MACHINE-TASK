@@ -15,7 +15,7 @@ class HomeTopAutoPlayCarousel extends StatelessWidget {
         autoPlay: true,
         autoPlayInterval: const Duration(seconds: 3),
         enlargeCenterPage: true,
-        viewportFraction: 0.8,
+        viewportFraction: 0.86,
         enableInfiniteScroll: true,
       ),
       items: [
