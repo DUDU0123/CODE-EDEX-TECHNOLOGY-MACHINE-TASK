@@ -2,6 +2,7 @@ class AppAssets {
   // app fonts
   static const String lugfaRegularFont = 'LufgaRegular';
   static const String lugfaMediumFont = 'LufgaMedium';
+  static const String lufgaSemiBold = "LufgaSemiBold";
 
   //app images
   static const String appLoginPageBanner = "assets/images/login_page_banner.png";
@@ -15,4 +16,5 @@ class AppAssets {
   static const filterIcon = "assets/images/filter_icon.png";
   static const cartIcon = "assets/images/cart_icon.png";
   static const homeIconSvg = "assets/images/home_icon.svg";
+  static const eyeIcon = "assets/images/eye_btn.png";
 }

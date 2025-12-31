@@ -206,5 +206,5 @@ class AppConstraints {
 
   // Screen Dimensions
   static double kScreenHeight = ScreenUtil().screenHeight;
-  static double kScreenWidth = ScreenUtil().scaleWidth;
+  static double kScreenWidth = ScreenUtil().screenWidth;
 }

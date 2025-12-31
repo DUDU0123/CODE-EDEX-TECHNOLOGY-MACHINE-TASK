@@ -1,5 +1,4 @@
 
-import 'package:codeedex_machine_test_app/utils/app_common_methods.dart';
 import 'package:codeedex_machine_test_app/utils/app_imports.dart';
 import 'package:codeedex_machine_test_app/utils/enums/result_type_enum.dart';
 
@@ -8,7 +7,9 @@ class AppDialogs {
     Get.snackbar(
       backgroundColor: AppCommonMethods.getColorByResultType(resultType: messageType),
       snackbarTitle, snackbarMessage,
-      snackPosition: SnackPosition.BOTTOM,
+      snackPosition: SnackPosition.TOP,
+      colorText: AppColors.kWhite,
+      duration: Duration(seconds: 1)
     );
   }
 }

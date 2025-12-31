@@ -81,13 +81,12 @@ flutter:
     - family: LufgaMedium
       fonts:
         - asset: assets/fonts/LufgaMedium.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
     - family: LufgaRegular
       fonts:
         - asset: assets/fonts/LufgaRegular.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+    - family: LufgaSemiBold
+      fonts:
+        - asset: assets/fonts/LufgaSemiBold.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
