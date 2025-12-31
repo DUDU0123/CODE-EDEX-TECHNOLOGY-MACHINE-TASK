@@ -12,7 +12,7 @@ class ProductCircularWidget extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          CircleAvatar(radius: 46.r),
+          CircleAvatar(radius: 42.r),
           SizedBox(
             width: 62.w,
             child: Text(
