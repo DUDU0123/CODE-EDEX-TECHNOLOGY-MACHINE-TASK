@@ -1,6 +1,7 @@
 import 'package:codeedex_machine_test_app/models/home_response_model.dart';
 import 'package:codeedex_machine_test_app/utils/constants/backend_constants.dart';
-import 'package:codeedex_machine_test_app/utils/initi_controllers.dart';
+
+import '../../utils/initi_controllers.dart';
 
 class HomeService {
 
