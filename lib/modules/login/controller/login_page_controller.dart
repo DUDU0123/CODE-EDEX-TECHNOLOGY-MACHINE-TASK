@@ -30,7 +30,7 @@ class LoginPageController extends GetxController{
       if (email.isNotEmpty && password.isNotEmpty) {
         if (email == AppCommonMethods.loginEmail && password == AppCommonMethods.loginPassword) {
           final isLoggedIn = await LoginServices.loginUser(email: email, password: password);
-          if (isLoggedIn) {
+          if (isLoggedIn && SharedPrefsService.getUserToken()?.isNotEmpty == true) {
             SharedPrefsService.setIsUserLoggedIn(value: true);
             Get.offUntil(MaterialPageRoute(builder: (context) {
                       return AppDashboard();

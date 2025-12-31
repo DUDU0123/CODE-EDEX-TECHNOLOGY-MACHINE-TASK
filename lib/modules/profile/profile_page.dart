@@ -11,6 +11,7 @@ class ProfilePage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: ElevatedButton(onPressed: () async {
+          await SharedPrefsService.setUserToken(userTokenValue: '');
           await SharedPrefsService.setIsUserLoggedIn(value: false);
           Get.offUntil(MaterialPageRoute(builder: (context) {
             return LoginPage();
