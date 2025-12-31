@@ -1,3 +1,4 @@
+import 'package:codeedex_machine_test_app/modules/home/controller/home_page_controller.dart';
 import 'package:codeedex_machine_test_app/utils/app_imports.dart';
 import 'package:codeedex_machine_test_app/utils/constants/app_constraints.dart';
 import 'package:codeedex_machine_test_app/widgets/home_page/common_product_heading.dart';
@@ -15,6 +16,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   void initState() {
+    Get.find<HomePageController>().loadHome();
     super.initState();
   }
   @override
