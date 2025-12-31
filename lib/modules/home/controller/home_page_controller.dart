@@ -1,5 +1,6 @@
 import 'package:codeedex_machine_test_app/models/home_response_model.dart';
 import 'package:codeedex_machine_test_app/services/home/home_service.dart';
+import 'package:codeedex_machine_test_app/services/shared_prefs_service.dart';
 import 'package:codeedex_machine_test_app/utils/app_imports.dart';
 
 class HomePageController extends GetxController{
@@ -20,7 +21,7 @@ class HomePageController extends GetxController{
 
     homeData = await service.getHomeData(
       id: "LL1",
-      token: "YOUR_TOKEN",
+      token: SharedPrefsService.getUserToken() ?? '',
     );
 
     isLoading = false;
