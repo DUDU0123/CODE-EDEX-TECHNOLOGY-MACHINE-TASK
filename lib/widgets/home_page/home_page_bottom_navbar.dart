@@ -27,6 +27,7 @@ class HomePageBottomNavBar extends StatelessWidget {
             selectedLabelStyle: AppCommonMethods.commonTextStyle(
               fontSize: 14.sp,
             ),
+            
             showSelectedLabels: true,
             showUnselectedLabels: true,
     
@@ -52,6 +53,9 @@ class HomePageBottomNavBar extends StatelessWidget {
                   AppAssets.categoryIcon,
                   width: 30.w,
                   height: 30.h,
+                  color: homePageController.currentIndex == 1
+                        ? AppColors.kAppPrimaryColor
+                        : AppColors.kGrey,
                 ),
                 label: "Categories",
               ),
@@ -60,6 +64,9 @@ class HomePageBottomNavBar extends StatelessWidget {
                   AppAssets.cartIcon,
                   width: 30.w,
                   height: 30.h,
+                  color: homePageController.currentIndex == 2
+                        ? AppColors.kAppPrimaryColor
+                        : AppColors.kGrey,
                 ),
                 label: "Cart",
               ),
@@ -68,6 +75,9 @@ class HomePageBottomNavBar extends StatelessWidget {
                   AppAssets.profileIcon,
                   width: 30.w,
                   height: 30.h,
+                  color: homePageController.currentIndex == 3
+                        ? AppColors.kAppPrimaryColor
+                        : AppColors.kGrey,
                 ),
                 label: "Profile",
               ),

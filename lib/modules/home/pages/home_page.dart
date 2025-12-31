@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:codeedex_machine_test_app/modules/home/controller/home_page_controller.dart';
 import 'package:codeedex_machine_test_app/utils/app_imports.dart';
 import 'package:codeedex_machine_test_app/utils/constants/app_constraints.dart';
@@ -16,14 +17,41 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   void initState() {
-    Get.find<HomePageController>().loadHome();
+    // Get.find<HomePageController>().loadHome();
     super.initState();
   }
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        AdvertisementWidget(headingText: "yghjk", startTxt: "hvjhjlmcgfguhijk",image:  AppAssets.almondsThreeSet,),
+        AppConstraints.kHeight14,
+        CarouselSlider(
+          options: CarouselOptions(
+            height: 160.h, // adjust height
+            autoPlay: true,
+            autoPlayInterval: const Duration(seconds: 3),
+            enlargeCenterPage: true,
+            viewportFraction: 0.8,
+            enableInfiniteScroll: true,
+          ),
+          items: [
+            AdvertisementWidget(
+              headingText: "Go Natural with Unpolished Grains",
+              startTxt: "Hurry Up! Get 10% Off",
+              image: AppAssets.almondsThreeSet,
+            ),
+            AdvertisementWidget(
+              headingText: "Go Natural with Unpolished Grains",
+              startTxt: "Hurry Up! Get 10% Off",
+              image: AppAssets.almondsThreeSet,
+            ),
+            AdvertisementWidget(
+              headingText: "Go Natural with Unpolished Grains",
+              startTxt: "Hurry Up! Get 10% Off",
+              image: AppAssets.almondsThreeSet,
+            ),
+          ],
+        ),
         AppConstraints.kHeight10,
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 10.w),
