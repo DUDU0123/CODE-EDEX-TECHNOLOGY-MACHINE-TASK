@@ -20,6 +20,7 @@ class AppAssets {
   static const homeIconSvg = "assets/images/home_icon.svg";
   static const eyeIcon = "assets/images/eye_btn.png";
   static const categoryIcon = "assets/images/category_icon.png";
+   static const addToCart = "assets/images/add_to_card_icon.svg";
 
 
 }

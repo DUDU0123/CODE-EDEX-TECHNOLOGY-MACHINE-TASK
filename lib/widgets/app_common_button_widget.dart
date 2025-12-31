@@ -8,7 +8,7 @@ class AppCommonButtonWidget extends StatelessWidget {
     required this.btnRadius,
     required this.btnPadding,
     required this.btnTextColor,
-    this.btnWidth, this.fontSize, required this.textAlign, this.onTap,
+    this.btnWidth, this.fontSize, required this.textAlign, this.onTap, this.suffixWidget,
   });
   final String btnText;
   final Color btnColor;
@@ -19,6 +19,7 @@ class AppCommonButtonWidget extends StatelessWidget {
   final double? fontSize;
   final TextAlign textAlign;
   final void Function()? onTap;
+  final Widget? suffixWidget;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -30,14 +31,20 @@ class AppCommonButtonWidget extends StatelessWidget {
           color: btnColor,
           borderRadius: BorderRadius.circular(5.r),
         ),
-        child: Text(
-          btnText,
-          textAlign: textAlign,
-          style: AppCommonMethods.commonTextStyle(
-            fontSize: fontSize,
-            color: btnTextColor,
-            fontFamily: AppAssets.lugfaMediumFont,
-          ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              btnText,
+              textAlign: textAlign,
+              style: AppCommonMethods.commonTextStyle(
+                fontSize: fontSize,
+                color: btnTextColor,
+                fontFamily: AppAssets.lugfaMediumFont,
+              ),
+            ),
+            if(suffixWidget != null) suffixWidget!,
+          ],
         ),
       ),
     );
