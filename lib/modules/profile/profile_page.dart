@@ -13,10 +13,10 @@ class ProfilePage extends StatelessWidget {
         child: ElevatedButton(onPressed: () async {
           await SharedPrefsService.setUserToken(userTokenValue: '');
           await SharedPrefsService.setIsUserLoggedIn(value: false);
+          Get.find<HomePageController>().updateCurrentIndex(index: 0);
           Get.offUntil(MaterialPageRoute(builder: (context) {
             return LoginPage();
           },), (route) => false,);
-          Get.find<HomePageController>().updateCurrentIndex(index: 0);
         }, child: Text("Logout")),
       ),
     );
