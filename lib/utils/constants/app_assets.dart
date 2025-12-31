@@ -6,6 +6,8 @@ class AppAssets {
 
   //app images
   static const String appLoginPageBanner = "assets/images/login_page_banner.png";
+  static const String appBarLogo = "assets/images/home_appbar_logo.png";
+  static const String almondsThreeSet = "assets/images/almonds_set_three.png";
 
   // app icons
   static const notificationIcon = "assets/images/notification_icon.png";
@@ -17,4 +19,7 @@ class AppAssets {
   static const cartIcon = "assets/images/cart_icon.png";
   static const homeIconSvg = "assets/images/home_icon.svg";
   static const eyeIcon = "assets/images/eye_btn.png";
+  static const categoryIcon = "assets/images/category_icon.png";
+
+
 }

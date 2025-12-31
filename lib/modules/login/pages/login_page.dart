@@ -1,3 +1,4 @@
+import 'package:codeedex_machine_test_app/modules/app_dashboard/app_dashboard.dart';
 import 'package:codeedex_machine_test_app/modules/home/pages/home_page.dart';
 import 'package:codeedex_machine_test_app/modules/login/controller/login_page_controller.dart';
 import 'package:codeedex_machine_test_app/utils/app_imports.dart';
@@ -56,6 +57,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       AppConstraints.kHeight10,
                       CommonTextFormFieldWidget(
+                        keyboardType: TextInputType.emailAddress,
                         controller: emailController,
                         fillColor: AppColors.kWhite,
                         filled: true,
@@ -92,13 +94,9 @@ class _LoginPageState extends State<LoginPage> {
                               },
                               child: Padding(
                                 padding: EdgeInsets.only(right: 5.w),
-                                child: loginPageController.isObscureText
-                                    ? Image.asset(
-                                        AppAssets.eyeIcon,
-                                        width: 25.w,
-                                        height: 25.h,
-                                      )
-                                    : Icon(Icons.remove_red_eye_outlined),
+                                child: Icon(loginPageController.isObscureText
+                                    ? Icons.remove_red_eye
+                                    : Icons.remove_red_eye_outlined),
                               ),
                             ),
                           );
@@ -164,7 +162,7 @@ class _LoginPageState extends State<LoginPage> {
             child: GestureDetector(
               onTap: () {
                 Get.offUntil(MaterialPageRoute(builder: (context) {
-                  return HomePage();
+                  return AppDashboard();
                 },), (route) => false,);
               },
               child: Row(

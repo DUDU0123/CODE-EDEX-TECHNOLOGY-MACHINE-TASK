@@ -4,6 +4,7 @@ class AppColors {
   static const kWhite = Colors.white;
   static const kBlack = Colors.black;
   static const kGreen = Colors.green;
+  static const kGrey = Colors.grey;
   static const kRed = Colors.red;
   static const kTransparent = Colors.grey;
   static const kAppPrimaryColor = Color(0xFF7C2F02);

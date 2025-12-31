@@ -37,6 +37,8 @@ dependencies:
   dio: ^5.9.0
   get: ^4.7.3
   flutter_screenutil: ^5.9.3
+  shared_preferences: ^2.5.3
+  flutter_svg: ^2.2.3
 
 dev_dependencies:
   flutter_test:
